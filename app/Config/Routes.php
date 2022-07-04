@@ -38,7 +38,12 @@ $routes->set404Override();
 $routes->get('/', 'Home::index');
 
 // satuan
-$routes->get('/satuan', 'Satuan::index');
+$routes->get('/satuan', 'Konfigurasi::index');
+$routes->post('/simpan_satuan', 'konfigurasi::tambahSatuan');
+$routes->post('/delete_satuan', 'konfigurasi::delete_satuan');
+$routes->get('/jenis_barang', 'konfigurasi::jenis_barang');
+$routes->post('/tambah_jenis_barang', 'konfigurasi::tambah_jenis');
+$routes->post('/delete_jenis', 'konfigurasi::delete_jenis');
 
 /*
  * --------------------------------------------------------------------

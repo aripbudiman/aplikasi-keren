@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Dashboard</title>
+    <title><?= $title; ?></title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -27,14 +27,16 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/plugins/daterangepicker/daterangepicker.css">
     <!-- summernote -->
     <link rel="stylesheet" href="<?= base_url(); ?>/plugins/summernote/summernote-bs4.min.css">
+    <!-- sweetalert2  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
-        <!-- Preloader -->
-        <div class="preloader flex-column justify-content-center align-items-center">
+        <!-- Preloader effek loading-->
+        <!-- <div class="preloader flex-column justify-content-center align-items-center">
             <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
-        </div>
+        </div> -->
 
         <!-- Navbar -->
         <?= $this->include('layouts/navbar'); ?>
@@ -63,7 +65,9 @@
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Muhamad Arip Budiman <a href="https://www.facebook.com/arif.hernandesz/">@facebook</a></strong>
+            <div class="text-center">
+                <strong>Muhamad Arip Budiman <a href="https://www.facebook.com/arif.hernandesz/">@facebook</a></strong>
+            </div>
         </footer>
 
         <!-- Control Sidebar -->
@@ -108,6 +112,8 @@
     <script src="<?= base_url(); ?>/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?= base_url(); ?>/dist/js/pages/dashboard.js"></script>
+    <!-- script js -->
+    <script src="<?= base_url(); ?>/aplikasi.js"></script>
 </body>
 
 </html>
