@@ -48,7 +48,7 @@
                             <tr>
                                 <th scope="row" class="text-center"><?= $no++; ?></th>
                                 <td><?= $s['nama_satuan']; ?></td>
-                                <td><button class="btn btn-sm btn-danger delete-satuan" onclick="return konfirmasi(), delete_satuan('<?= $s['id']; ?>')">Delete</button></td>
+                                <td><button class="btn btn-sm btn-danger delete-satuan" data-id="<?= $s['id']; ?>">Delete</button></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

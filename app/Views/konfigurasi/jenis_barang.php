@@ -48,7 +48,7 @@
                             <tr>
                                 <th scope="row" class="text-center"><?= $no++; ?></th>
                                 <td><?= $j['nama_jenis']; ?></td>
-                                <td><button class="btn btn-sm btn-danger delete-jenis" data-id="<?= $j['id']; ?>" onclick="konfirmasi('Yakin ingin menghapus?','Berhasil dihapus','Batal dihapus')">Delete</button></td>
+                                <td><button class="btn btn-sm btn-danger delete-jenis" data-id="<?= $j['id']; ?>">Delete</button></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>

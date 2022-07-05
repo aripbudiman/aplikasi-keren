@@ -29,6 +29,23 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/plugins/summernote/summernote-bs4.min.css">
     <!-- sweetalert2  -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- DATA TABLES -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="<?= base_url(); ?>/plugins/datatables/jquery.dataTables.js"></script>
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-autofill/css/autoFill.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-colreorder/css/colReorder.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-fixedcolumns/css/fixedColumns.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-fixedheader/css/fixedHeader.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-keytable/css/keyTable.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-rowgroup/css/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-rowreorder/css/rowReorder.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-scroller/css/scroller.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-searchbuilder/css/searchBuilder.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-searchpanes/css/searchPanes.bootstrap4.min.css">
+    <link rel="stylesheet" href="<?= base_url(); ?>/plugins/datatables-select/css/select.bootstrap4.min.css">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -112,6 +129,23 @@
     <script src="<?= base_url(); ?>/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="<?= base_url(); ?>/dist/js/pages/dashboard.js"></script>
+    <!-- Data Tables -->
+    <script src="<?= base_url(); ?>/plugins/datatables/jquery-3.5.1.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-autofill/js/autoFill.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-colreorder/js/colReorder.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-fixedcolumns/js/fixedColumns.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-fixedheader/js/fixedHeader.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-keytable/js/keyTable.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-rowgroup/js/dataTables.rowGroup.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-rowreorder/js/dataTables.rowReorder.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-scroller/js/scroller.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-searchbuilder/js/searchBuilder.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-searchpanes/js/searchPanes.bootstrap4.min.js"></script>
+    <script src="<?= base_url(); ?>/plugins/datatables-select/js/select.bootstrap4.min.js"></script>
     <!-- script js -->
     <script src="<?= base_url(); ?>/aplikasi.js"></script>
 </body>

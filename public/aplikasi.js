@@ -28,9 +28,6 @@ function konfirmasi(title,confirm,denied){
         }).then((result) => {
         if (result.isConfirmed) {
             Swal.fire(confirm, '', 'success')
-            $(document).ready(function () {
-                delete_jenis()
-            });
         } else if (result.isDenied) {
             Swal.fire(denied, '', 'info')
         }
@@ -38,8 +35,11 @@ function konfirmasi(title,confirm,denied){
 }
 
 $(document).ready(function () {
+    $('#data-barang').DataTable();
     tambah_satuan()
     tambah_jenis()
+    delete_satuan()
+    delete_jenis()
 });
 
 function tambah_satuan(){
@@ -65,20 +65,26 @@ function tambah_satuan(){
     })
 }
 
-function delete_satuan(id){
-        $.ajax({
-            type: "post",
-            url: "/delete_satuan",
-            data:{
-                id:id
-            },
-            dataType: "json",
-            success: function (response) {
-                if(response){
-                    berhasil('success','Data berhasil dihapus','Terhapus!')
+function delete_satuan(){
+    $('.delete-satuan').on('click',function(){
+        if(!confirm('Yakin ingin menghapus?')){
+            return false
+        }
+            let id = $(this).data('id');
+            $.ajax({
+                type: "post",
+                url: "/delete_satuan",
+                data:{
+                    id:id
+                },
+                dataType: "json",
+                success: function (response) {
+                    if(response){
+                        berhasil('success','Data berhasil dihapus','Terhapus!')
+                    }
                 }
-            }
-        });
+            });
+    })
 }
 
 function tambah_jenis(){
@@ -106,7 +112,10 @@ function tambah_jenis(){
 
 function delete_jenis(){
     $('.delete-jenis').on('click',function(){
-    let id = $(this).data('id');
+        if(!confirm('Yakin ingin menghapus?')){
+            return false
+        }
+        let id = $(this).data('id');
         $.ajax({
             type: "post",
             url: "/delete_jenis",
