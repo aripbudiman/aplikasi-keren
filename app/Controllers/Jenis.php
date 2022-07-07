@@ -8,6 +8,9 @@ class Jenis extends BaseController
 {
     public function index()
     {
-        //
+        $data = [
+            'title' => 'Jenis'
+        ];
+        return view('jenis/index', $data);
     }
 }
